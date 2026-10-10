@@ -37,8 +37,13 @@ Consequently, rendered mobile/desktop layouts, both theme renders, actual keyboa
 
 ## Deployment and links
 
-The package remains a static GitHub Pages source package. No deployment or repository mutation was performed. Instagram is hidden until an exact profile URL is supplied. Email remains `info@ulxn.dev` from the existing package. External destination availability was not re-audited in this revision.
+The package remains a static GitHub Pages source package. No deployment or repository mutation was performed. Instagram is hidden until an exact profile URL is supplied. Email now points to `borneanironwood@proton.me`. External destination availability was not re-audited in this revision.
 
 ## v9 — PDF Lane project update
 
 Reviewed the supplied PDF Lane v1.2.3 source (`src/index.html`, `src/style.css`, and README). Updated its portfolio description to cover browser-local PDF merging, splitting, organization, and conversion, and replaced the generic preview with a compact HTML/CSS illustration of the actual workspace. The portfolio preview contains no PDF processing controls; the project link opens the app. HTML/CSS source and JavaScript syntax were checked. A browser render of this revision was not available in this environment.
+
+
+## v10 — layout and directory update
+
+Assets moved into `assets/`, documentation into `docs/`, while GitHub Pages entry files stay at the root. All internal file references resolve. The hero, Stuffs, and combined contact/footer area have a viewport-height minimum; content grows naturally on very short screens or with large text settings so it is never clipped. Mobile and tablet project previews are omitted to keep both projects readable within a typical viewport. Contact anchor targets the wrapper containing its footer. No browser render was available in this environment; viewport fit should be checked after deploy, especially on very short mobile screens.

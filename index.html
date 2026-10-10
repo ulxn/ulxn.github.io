@@ -11,18 +11,18 @@
   <title>ULXN · odd ideas, useful things</title>
   <meta
     name="description"
-    content="ULXN builds small tools for everyday workflows. Explore RAB Generator and PDFLane."
+    content="ULXN builds small tools for everyday workflows. Explore RAB Generator and PDF Lane."
   />
 
   <meta property="og:title" content="ULXN · odd ideas, useful things" />
-  <meta property="og:description" content="Small tools for everyday workflows. Explore RAB Generator and PDFLane." />
+  <meta property="og:description" content="Small tools for everyday workflows. Explore RAB Generator and PDF Lane." />
   <meta property="og:site_name" content="ULXN" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ulxn.github.io/" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ULXN · odd ideas, useful things" />
-  <meta name="twitter:description" content="Small tools for everyday workflows. Explore RAB Generator and PDFLane." />
+  <meta name="twitter:title" content="ULXN" />
+  <meta name="twitter:description" content="Small tools for everyday workflows. Explore RAB Generator and PDF Lane." />
   <link rel="canonical" href="https://ulxn.github.io/" />
 
   <script>
@@ -35,9 +35,9 @@
     })();
   </script>
 
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js" defer></script>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <script src="./assets/script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -88,12 +88,9 @@
         <span class="sr-only" id="hero-hint">Hover or focus to reveal a secret. Press Enter, Space, or tap to toggle it. Escape resets it.</span>
 
         <div class="hero-aside">
-          <p class="hero-lede">Mostly things I wish already existed.</p>
           <p class="hero-note">Designing, building, and occasionally overthinking.</p>
         </div>
       </div>
-
-      <a class="hero-link" href="#stuffs">See my stuffs</a>
     </section>
 
     <section class="section shell stuffs-section" id="stuffs" aria-labelledby="stuffs-title">
@@ -146,16 +143,16 @@
       <article class="project project-compact project-pdflane" aria-labelledby="pdflane-title">
         <div class="project-intro">
           <div>
-            <h3 id="pdflane-title">PDFLane</h3>
-            <p class="project-subtitle">Your files. Your device.</p>
+            <h3 id="pdflane-title">PDF Lane</h3>
+            <p class="project-subtitle">Your private PDF workspace.</p>
           </div>
 
           <p class="project-description">
-            Merge, split, organize, and convert PDFs right in your browser. No uploads or accounts.
+            PDFs to combine, split, tidy up, or turn into images? Drop them in. They stay on your device.
           </p>
           <div class="project-actions">
             <a class="primary-link" href="https://pdflane.pages.dev/" target="_blank" rel="noreferrer">
-              Open PDFLane
+              Open PDF Lane
               <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -190,7 +187,8 @@
       </article>
     </section>
 
-    <section class="section shell contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact-screen" id="contact">
+      <section class="section shell contact" aria-labelledby="contact-title">
       <div class="contact-heading">
         <p class="section-label">02 / Hit me up</p>
         <h2 id="contact-title">Got something interesting?</h2>
@@ -210,12 +208,12 @@
             <span class="contact-detail">@ulxn</span>
           </a>
 
-          <a href="mailto:info@ulxn.dev">
+          <a href="mailto:borneanironwood@proton.me">
             <span class="contact-name">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3v-13Zm1.8 1.8 7.2 5.42 7.2-5.42H4.8Zm14.4 9.4V9.55L12 14.97 4.8 9.55v7.15h14.4Z"></path></svg>
               Email
             </span>
-            <span class="contact-detail">info@ulxn.dev</span>
+            <span class="contact-detail">borneanironwood@proton.me</span>
           </a>
 
           <!-- Add your Instagram URL below, then remove the hidden attribute. -->
@@ -229,13 +227,13 @@
         </div>
       </div>
       <p class="contact-endnote">No forms. Just say hi.</p>
-    </section>
+      </section>
+      <footer class="site-footer shell">
+        <p>© <span data-year>2026</span> ULXN</p>
+        <p class="footer-note">built after opening one tab too many.</p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </div>
   </main>
-
-  <footer class="site-footer shell">
-    <p>© <span data-year>2026</span> ULXN</p>
-    <p class="footer-note">built after opening one tab too many.</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
 </body>
 </html>

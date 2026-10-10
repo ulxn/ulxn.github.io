@@ -238,8 +238,11 @@ html:not([data-theme="dark"]) .sun-icon { display: none; }
 html[data-theme="dark"] .moon-icon { display: none; }
 
 .hero {
-  padding-top: clamp(7.5rem, 10vw, 10rem);
-  padding-bottom: clamp(3.5rem, 6vw, 6rem);
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
 }
 
 .section-label {
@@ -252,6 +255,7 @@ html[data-theme="dark"] .moon-icon { display: none; }
 
 .hero-main {
   display: grid;
+  width: 100%;
   grid-template-columns: minmax(0, 1.45fr) minmax(14rem, 0.55fr);
   gap: clamp(2rem, 6vw, 6rem);
   align-items: end;
@@ -327,17 +331,9 @@ html[data-theme="dark"] .moon-icon { display: none; }
   padding-bottom: 0.4rem;
 }
 
-.hero-lede {
-  max-width: 24rem;
-  margin: 0;
-  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-}
-
 .hero-note {
   max-width: 22rem;
-  margin: var(--space-4) 0 0;
+  margin: 0;
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.55;
@@ -378,9 +374,12 @@ html[data-theme="dark"] .moon-icon { display: none; }
 }
 
 .stuffs-section {
-  scroll-margin-top: 5rem;
-  padding-top: clamp(3.5rem, 6vw, 6rem);
-  padding-bottom: clamp(3.5rem, 6vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
 }
 .stuffs-section .section-header {
   display: flex;
@@ -411,9 +410,9 @@ html[data-theme="dark"] .project { background: var(--surface); }
 .project-compact .project-intro {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.9rem;
   min-width: 0;
-  padding: clamp(1.5rem, 3vw, 3rem);
+  padding: clamp(1.25rem, 2vw, 2rem);
 }
 .project-compact .project-description {
   max-width: 27rem;
@@ -422,7 +421,7 @@ html[data-theme="dark"] .project { background: var(--surface); }
 }
 .project-compact .project-actions { margin-top: auto; padding-top: 0.5rem; }
 .project-compact .project-preview {
-  min-height: 18rem;
+  min-height: 13rem;
   border-radius: 0;
   padding: clamp(1.25rem, 2.5vw, 2.25rem);
 }
@@ -664,16 +663,24 @@ html[data-theme="dark"] .project { background: var(--surface); }
   font-size: 0.58rem;
 }
 
+.contact-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
 .contact {
   display: grid;
+  flex: 1;
+  width: 100%;
   grid-template-columns: minmax(15rem, 0.8fr) minmax(18rem, 1.2fr);
   grid-template-rows: minmax(0, 1fr) auto;
   column-gap: clamp(3rem, 8vw, 8rem);
   row-gap: 2rem;
   align-items: center;
-  min-height: 100svh;
-  padding-top: clamp(7rem, 11vh, 10rem);
-  padding-bottom: clamp(2rem, 5vh, 4rem);
+  min-height: 0;
+  padding-top: clamp(5.5rem, 9vh, 7rem);
+  padding-bottom: clamp(1rem, 2vh, 2rem);
 }
 
 .contact-endnote {
@@ -742,10 +749,13 @@ html[data-theme="dark"] .project { background: var(--surface); }
 .contact-detail {
   color: var(--muted);
   font-size: 0.76rem;
+  overflow-wrap: anywhere;
 }
 
 .site-footer {
   min-height: 5.5rem;
+  width: 100%;
+  flex: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-4);
@@ -791,8 +801,8 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .hero {
-    padding-top: 7.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
   }
 
   .hero-main {
@@ -801,10 +811,6 @@ html[data-theme="dark"] .project { background: var(--surface); }
 
   .hero-aside {
     max-width: 34rem;
-  }
-
-  .hero-link {
-    margin-top: var(--space-4);
   }
 
   .section-header {
@@ -827,7 +833,7 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .project-compact .project-intro { order: 1; }
-  .project-compact .project-preview { order: 2; }
+  .project-compact .project-preview { display: none; }
   .project-compact .project-actions { margin-top: 0; }
 
   .contact {
@@ -865,7 +871,7 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .hero {
-    padding-top: 6.6rem;
+    padding-top: 5.5rem;
   }
 
   .hero h1 {
@@ -874,7 +880,7 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .hero-main {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 
   .section {
@@ -882,14 +888,13 @@ html[data-theme="dark"] .project { background: var(--surface); }
     padding-bottom: 5.5rem;
   }
 
-  .stuffs-section { padding-block: 3.6rem; }
+  .stuffs-section { padding-block: 5.5rem 1.5rem; }
   .stuffs-section .section-header {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.6rem;
   }
-  .project-compact .project-intro { padding: 1.4rem; }
-  .project-compact .project-preview { min-height: 14rem; padding: 1rem; }
+  .project-compact .project-intro { padding: 1rem 1.2rem; gap: 0.55rem; }
   .project-compact .preview-fields { grid-template-columns: 1fr 1fr; }
   .pdflane-preview-content { padding: 0.85rem; }
 
@@ -899,8 +904,13 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .project h3 {
-    font-size: clamp(2.9rem, 14vw, 4.2rem);
+    font-size: clamp(2rem, 8vw, 2.8rem);
   }
+  .project-subtitle { margin-top: 0.2rem; font-size: 0.8rem; }
+  .project-compact .project-description { font-size: 0.9rem; line-height: 1.4; }
+  .project + .project { margin-top: 0.75rem; }
+  .primary-link { min-height: 2.5rem; padding: 0.55rem 0.75rem; }
+  .stuffs-section .section-header { margin-bottom: 1.2rem; }
 
   .project-intro {
     padding-block: 2rem 2.5rem;
@@ -934,10 +944,13 @@ html[data-theme="dark"] .project { background: var(--surface); }
   }
 
   .contact {
-    min-height: 100svh;
-    padding-top: 7.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 1rem;
+    gap: clamp(1.25rem, 3vh, 2rem);
   }
+  .contact-heading h2 { margin-top: 0.75rem; }
+  .contact-copy { margin-bottom: 1.25rem; }
+  .contact-links a { min-height: 3.25rem; padding-block: 0.5rem; }
 
   .contact-detail {
     padding-left: 1.7rem;
@@ -955,6 +968,17 @@ html[data-theme="dark"] .project { background: var(--surface); }
     padding-bottom: 0.35rem;
     text-align: left;
   }
+}
+
+@media (max-height: 700px) {
+  .stuffs-section { padding-top: 5rem; padding-bottom: 1rem; }
+  .stuffs-section .section-header { margin-bottom: 0.8rem; }
+  .project-compact .project-intro { gap: 0.45rem; padding-block: 0.85rem; }
+  .project + .project { margin-top: 0.6rem; }
+  .contact { padding-top: 5rem; padding-bottom: 0.65rem; row-gap: 0.85rem; }
+  .contact-copy { margin-bottom: 0.75rem; }
+  .contact-heading h2 { margin-top: 0.6rem; }
+  .site-footer { min-height: 4.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

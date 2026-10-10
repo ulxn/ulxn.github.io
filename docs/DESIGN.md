@@ -42,6 +42,6 @@ Hover or keyboard focus reveals the secret. Click, tap, Enter, and Space toggle 
 
 ## Retained setup
 
-No build step. Instagram remains hidden until the owner supplies the correct profile. Email retains the existing `info@ulxn.dev` assumption. The detailed RAB coverage, stack, and price mockup have been removed from the homepage to keep Stuffs compact.
+No build step. Instagram remains hidden until the owner supplies the correct profile. Email points to `borneanironwood@proton.me`. The detailed RAB coverage, stack, and price mockup have been removed from the homepage to keep Stuffs compact.
 
 Metadata, robots.txt, and sitemap.xml point to `https://ulxn.github.io/`. Change their URLs together if a custom domain becomes canonical. PageSpeed scores are measured on the published page and can vary across runs; source changes alone cannot establish a score of 100.

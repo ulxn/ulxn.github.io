@@ -4,7 +4,7 @@ Static personal site for GitHub Pages. No build step, framework, package manager
 
 ## Deploy
 
-Put these files at the root of the `ulxn.github.io` repository and push to the branch used by GitHub Pages.
+Push the contents of this ZIP to the root of the `ulxn.github.io` repository. The Pages source is `main / (root)`; keep `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, and `.nojekyll` at the root. CSS, JavaScript, and favicon live in `assets/`; project notes live in `docs/`.
 
 ## Instagram
 
@@ -20,4 +20,4 @@ The page metadata, `robots.txt`, and `sitemap.xml` use `https://ulxn.github.io/`
 
 ## PageSpeed check
 
-Run PageSpeed Insights on the published URL on both mobile and desktop after deployment. A 100 score cannot be guaranteed from source inspection because Lighthouse measurements vary between runs and hosting conditions. `VERIFICATION.md` records the checks completed for this package.
+Run PageSpeed Insights on the published URL on both mobile and desktop after deployment. A 100 score cannot be guaranteed from source inspection because Lighthouse measurements vary between runs and hosting conditions. `docs/VERIFICATION.md` records the checks completed for this package.
