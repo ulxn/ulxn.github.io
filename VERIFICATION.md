@@ -38,3 +38,7 @@ Consequently, rendered mobile/desktop layouts, both theme renders, actual keyboa
 ## Deployment and links
 
 The package remains a static GitHub Pages source package. No deployment or repository mutation was performed. Instagram is hidden until an exact profile URL is supplied. Email remains `info@ulxn.dev` from the existing package. External destination availability was not re-audited in this revision.
+
+## v9 — PDF Lane project update
+
+Reviewed the supplied PDF Lane v1.2.3 source (`src/index.html`, `src/style.css`, and README). Updated its portfolio description to cover browser-local PDF merging, splitting, organization, and conversion, and replaced the generic preview with a compact HTML/CSS illustration of the actual workspace. The portfolio preview contains no PDF processing controls; the project link opens the app. HTML/CSS source and JavaScript syntax were checked. A browser render of this revision was not available in this environment.
