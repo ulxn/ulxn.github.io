@@ -16,7 +16,7 @@ System sans-serif provides compact display weight without downloads. Georgia ita
 Hero, Stuffs, Hit me up retain the established content order. "who am i?" sits under ULXN in the header. The hero begins near the header instead of vertically centering within a full-height panel. Stuffs labels and "Out in the wild." sit close together. One compact project frame pairs a short description and action with a small preview. Mobile reflows this pair into a single column and uses wider side margins. Contact starts at the top of its own viewport when reached through `#contact`, with a small sign-off to anchor its lower edge. The footer's side-quest note remains visible on mobile.
 
 ## Motion
-Small and responsive only: the requested theme-toggle rotation (360 degrees in 420ms) and per-letter headline changes. The 404 page of Otto Prompt Vault supplies the brief red/blue displacement at 93%, 95%, and 97% of a 2.4 second cycle while the headline is hovered. Reduced motion changes words immediately and removes the displacement. Unused entrance-reveal code was removed.
+The headline is static on initial load. Only the changing words animate on interaction: 100ms transitions, 10ms between changed letters, 200ms total. The IHZ opacity, 5px blur, +/-4px vertical shift, width morph, and cubic-bezier(.16,1,.3,1) easing remain. Word wrappers allow visible overflow so descenders and italic overhangs are not cut off.
 
 ## Liveliness
 Energy 3 / Rhythm 3 / Motion 1. Large type is the hero focal point; the real project is the next focal point. The italic voice repeats at the contact heading.
@@ -38,7 +38,7 @@ Secret: `Turning / odd ideas / into unpaid / labour.`
 
 Line lengths including spaces and punctuation: 7, 9, 11, 7. Both sentences have 31 letters, 5 spaces, and a period. Both changing words have 6 letters. Each changing word remains a single naturally kerned text run; invisible whole-word measures reserve room for either state. JavaScript briefly changes characters one at a time within that run, with a restrained one-pixel glitch.
 
-Hover or keyboard focus reveals the secret. Click, tap, Enter, and Space toggle it. Escape and leaving keyboard focus reset it.
+Hover on either changing word or keyboard focus reveals the secret. Static headline text does not receive pointer events. Click, tap, Enter, and Space toggle it. Escape and leaving keyboard focus reset it.
 
 ## Retained setup
 
