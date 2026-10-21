@@ -12,3 +12,7 @@
 ## Word-only hover trigger
 
 Pointer enter/leave handlers are attached only to the two changing words. Static headline text does not receive pointer events. Mouse clicks do not pin the alternate state; keyboard focus and touch toggles remain. The actual event handlers were exercised with a minimal DOM substitute to verify scope, reset, keyboard focus, and touch. Animation timing and effects are unchanged.
+
+## Reported desktop accessibility failures
+
+Both project preview containers now expose role=img with their existing accessible labels; decorative inner frames remain hidden from screen readers. The PDF Lane counter text changed from #777 to #626262 on white, increasing calculated contrast from 4.478:1 to 6.099:1. These address the two failure types shown in the supplied PageSpeed screenshot. A new published Lighthouse score has not been measured.
