@@ -4,27 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f6f3ec" />
   <meta name="robots" content="noindex, follow" />
   <meta name="description" content="This page isn't here. Return to ULXN." />
   <title>404 · ULXN</title>
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-  <style>
-    :root { color-scheme: light dark; --bg:#f2f0e9; --ink:#11110f; --muted:#64615a; --accent:#d7ff4f; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#141412; --ink:#efede6; --muted:#aaa69d; } }
-    * { box-sizing:border-box; }
-    ::selection { color:#151513; background:var(--accent); }
-    body { margin:0; min-height:100svh; display:grid; place-items:center; padding:1.5rem; background:var(--bg); color:var(--ink); font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }
-    main { width:min(100%,48rem); }
-    p { margin:0; color:var(--muted); font-size:.8rem; }
-    h1 { margin:1.5rem 0 2rem; font-size:clamp(4rem,13vw,8rem); line-height:.88; letter-spacing:-.07em; }
-    a { color:inherit; font-size:.9rem; text-underline-offset:.25em; }
-  </style>
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('ulxn-theme');
+        const theme = ['light', 'dark'].includes(saved) ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      } catch (_) {}
+    })();
+  </script>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script src="/assets/script.js" defer></script>
 </head>
-<body>
-  <main>
-    <p>404 / you found nothing.</p>
+<body class="error-page">
+  <main class="error-main shell">
+    <p class="section-label">404 / you found nothing.</p>
     <h1>Wrong tab,<br />probably.</h1>
-    <a href="./">← Back home</a>
+    <a class="primary-link" href="/"><span aria-hidden="true">←</span> Back home</a>
   </main>
+  <footer class="site-footer shell">
+    <p class="footer-identity"><span class="site-version" aria-label="Site version 2.1.1">v2.1.1</span> <span aria-hidden="true">•</span> © <span data-year>2026</span> ULXN</p>
+    <p class="footer-note">built after opening one tab too many.</p>
+  </footer>
 </body>
 </html>
